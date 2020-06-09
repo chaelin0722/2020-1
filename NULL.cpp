@@ -11,10 +11,13 @@ void swap(int *x, int *y){
 	*y = tmp;
 }
 int main(void){
-	
+	char a[10];
+	printf("%d\n", sizeof(a));
 	int *p=NULL, *q=NULL;
-	if(!p)/*if p==NULL*/   p = (int*)malloc(sizeof(int));
+	if(!p)/*if p==NULL*/   p = (int*)malloc(100);
 	if(!q)   q = (int*)malloc(sizeof(int));
+	
+	printf("sizeof p = %d, q = %d\n", _msize(p), _msize(q));
 	*p = 10;
 	*q = 20;
 	swap(p,q); 
