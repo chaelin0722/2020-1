@@ -1,3 +1,19 @@
+informed search  - 3가지
+
+- greedy-best-first search
+-  A* search
+- RBFS(recursive best first search)
+
+uninformed search
+
+- BFS (Breadth-first search)
+- DFS (Depth-frist search)
+  - iterative depth search
+  - depth-limit search??
+- Uniform-cost search
+
+
+
 
 
 - global optimal : 전체 가능한 모든 state들 중 가장 좋은 objective function을 갖는 state를 찾는 것
@@ -130,9 +146,7 @@ current state에 대한 정보가 없기 때문에 가능한 state들로 시작�
 
 	3.  online local search
 
-
-
-4. LRTA*
+- LRTA*
 
 
 
