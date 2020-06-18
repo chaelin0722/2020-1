@@ -1,3 +1,5 @@
+
+
 informed search  - 3가지
 
 - greedy-best-first search
@@ -6,15 +8,24 @@ informed search  - 3가지
 
 uninformed search
 
-- BFS (Breadth-first search)
-- DFS (Depth-frist search)
-  - iterative depth search
-  - depth-limit search??
-- Uniform-cost search
+- BFS (Breadth-first search) - expand shallowest
 
+- Uniform-cost search - expand lowest-cost
 
+- DFS (Depth-first search) - expand deepest  => memory 생략, 펼쳐서 goal이 아니면 삭제
 
+  - iterative deepening depth search
+  - depth-limit search
 
+  
+
+- Bidirectional search
+
+  
+
+  <hr>
+
+  
 
 - global optimal : 전체 가능한 모든 state들 중 가장 좋은 objective function을 갖는 state를 찾는 것
 - local optimal : global optimal보단 작지만 어느정도 괜찮은, reasonable한 objective function 값을 갖는 state를 찾는 것
