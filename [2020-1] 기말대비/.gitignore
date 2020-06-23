@@ -1,0 +1,8 @@
+## t1, t2 무시하게 만들기
+
+t1.c
+t2.c
+*.exe
+
+practical_test/
+
