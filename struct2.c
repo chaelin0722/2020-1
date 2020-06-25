@@ -4,10 +4,12 @@
 
 int main(void){
 	
-	struct{
+	struct itemInfo{
 		char name[16];
 		int price;	
-	}item1 = {"computer", 1600}, item2;
+	};
+	
+	struct itemInfo	item1 = {"computer", 1600}, item2;
 	
 	item2 = item1;
 	
