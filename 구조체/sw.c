@@ -8,5 +8,6 @@ int main(void){
 	i |= 63;
 	printf("%X\n", i);
 	
+	
 	return 0;
 }
