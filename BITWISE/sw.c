@@ -1,10 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(void){
-	int a = 183;
-	int b = 1;
-	int c;
-	c = a^b;
-	printf("%x",c);
+int main(){
+	char *str = 0;
+	char *a = "Abcd";
+	str = (char*)malloc(4);
+	*str = *a;
+	printf("%s\n", str);
+	printf("%s", a);
 	return 0;
 }
