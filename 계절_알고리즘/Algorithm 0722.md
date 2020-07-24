@@ -84,3 +84,15 @@ pebble(n)
 
 > 복잡도 : O(n)
 
+
+
+- 문제 예 3 : 행렬 곱셈 순서
+
+
+
+- 문제 예 4 : 최장 공통 부분 순서 (Longest Common Subsequence)
+
+
+
+
+
