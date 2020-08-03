@@ -1,0 +1,51 @@
+문제 1
+
+a = []
+b = []
+for i in range(0,10) :
+    if i%2 == 0 :
+        a.append(i)
+    else :
+        b.append(i)
+
+
+문제 2
+
+print(type(a))  # int 는 정수형 타입이고 숫자 정수를 표현한다
+print(type(b))  #  tuple 은 튜플이고 리스트와 비슷하지만 수정, 삭제 그리고 추가가 불가능하다
+print(type(c))  # str 은 문자열 타입이고 말그대로 문자열을 표현한다. 
+print(type(d))  # list 는 리스트이며 순서가 있는 값들의 집합이다. 
+print(type(e))  # dict 는 딕셔너리 타입이고 key, value 값을 쌍으로 가진다. 
+
+문제 3
+
+for i in score:
+    if i >= 80 :
+        print("우수")
+    elif 80 > i >= 60 :
+        print("보통")
+    else :
+        print("미흡")
+
+문제 4
+
+df = titanic.loc[:,['pclass', 'fare']]
+
+z_score = lambda x: (x-min(x))/(max(x)-min(x))
+
+list(map(z_score, df['fare']))
+
+
+문제 5
+
+df = pd.read_csv('./insurance2.csv')
+
+print(df['age'].isnull().values.any())
+print(df['sex'].isnull().values.any())
+print(df['bmi'].isnull().values.any())
+print(df['children'].isnull().values.any())
+print(df['smoker'].isnull().values.any())
+print(df['region'].isnull().values.any())
+print(df['charges'].isnull().values.any())
+
+df.fillna(method='pad', inplace=True)
